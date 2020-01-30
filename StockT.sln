@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockDb", "StockDb\StockDb.csproj", "{B2A392DB-A10D-4981-8048-D9C99E85F901}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F7AD796E-A38E-44CB-9AE6-3F88CAA8FE00}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.pdb = .nuget\NuGet.pdb
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service.Lib", "Service.Lib\Service.Lib.csproj", "{E2664A73-7C25-4134-8521-CE0E4F43B661}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StcokTest.cs", "StcokTest.cs\StcokTest.cs.csproj", "{DAAAF8BB-C49C-4344-9DB8-1E2AFAEA9101}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockClient", "StockClient\StockClient.csproj", "{D54FB492-B8F3-4314-8F11-1115B4DD180C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2A392DB-A10D-4981-8048-D9C99E85F901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2A392DB-A10D-4981-8048-D9C99E85F901}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2A392DB-A10D-4981-8048-D9C99E85F901}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2A392DB-A10D-4981-8048-D9C99E85F901}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2664A73-7C25-4134-8521-CE0E4F43B661}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2664A73-7C25-4134-8521-CE0E4F43B661}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2664A73-7C25-4134-8521-CE0E4F43B661}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2664A73-7C25-4134-8521-CE0E4F43B661}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAAAF8BB-C49C-4344-9DB8-1E2AFAEA9101}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAAAF8BB-C49C-4344-9DB8-1E2AFAEA9101}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAAAF8BB-C49C-4344-9DB8-1E2AFAEA9101}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAAAF8BB-C49C-4344-9DB8-1E2AFAEA9101}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D54FB492-B8F3-4314-8F11-1115B4DD180C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D54FB492-B8F3-4314-8F11-1115B4DD180C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D54FB492-B8F3-4314-8F11-1115B4DD180C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D54FB492-B8F3-4314-8F11-1115B4DD180C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,11 @@
+C:\Users\aarikan\Desktop\StockT\StockT\bin\Debug\StockT.exe.config
+C:\Users\aarikan\Desktop\StockT\StockT\obj\Debug\StockUI.csprojResolveAssemblyReference.cache
+C:\Users\aarikan\Desktop\StockT\StockT\obj\Debug\StockT.AddCustomerViewPage.resources
+C:\Users\aarikan\Desktop\StockT\StockT\obj\Debug\StockT.CustomerUserControl.resources
+C:\Users\aarikan\Desktop\StockT\StockT\obj\Debug\StockT.MainViewPage.resources
+C:\Users\aarikan\Desktop\StockT\StockT\obj\Debug\StockT.ProductUserControl.resources
+C:\Users\aarikan\Desktop\StockT\StockT\obj\Debug\StockT.Properties.Resources.resources
+C:\Users\aarikan\Desktop\StockT\StockT\obj\Debug\StockT.UserControlDashboard.resources
+C:\Users\aarikan\Desktop\StockT\StockT\obj\Debug\StockT.UserControlCategory.resources
+C:\Users\aarikan\Desktop\StockT\StockT\obj\Debug\StockUI.csproj.GenerateResource.Cache
+C:\Users\aarikan\Desktop\StockT\StockT\obj\Debug\StockT.exe.licenses
