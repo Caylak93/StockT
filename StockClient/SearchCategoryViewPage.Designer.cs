@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SearchCategoryViewPage));
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.categoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.connectDataSet = new StockClient.ConnectDataSet();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
@@ -40,41 +40,28 @@
             this.checkButton2 = new DevExpress.XtraEditors.CheckButton();
             this.checkButton3 = new DevExpress.XtraEditors.CheckButton();
             this.checkButton4 = new DevExpress.XtraEditors.CheckButton();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            this.categoriesTableAdapter = new StockClient.ConnectDataSetTableAdapters.CategoriesTableAdapter();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.connectDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // gridControl1
+            // categoriesBindingSource
             // 
-            this.gridControl1.Location = new System.Drawing.Point(231, 12);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1143, 588);
-            this.gridControl1.TabIndex = 0;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
+            this.categoriesBindingSource.DataMember = "Categories";
+            this.categoriesBindingSource.DataSource = this.connectDataSet;
             // 
-            // gridView1
+            // connectDataSet
             // 
-            this.gridView1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1});
-            this.gridView1.DetailTabHeaderLocation = DevExpress.XtraTab.TabHeaderLocation.Right;
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.GroupSummary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.None, "", null, "")});
-            this.gridView1.Name = "gridView1";
-            // 
-            // gridColumn1
-            // 
-            this.gridColumn1.Caption = "gridColumn1";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
+            this.connectDataSet.DataSetName = "ConnectDataSet";
+            this.connectDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // textEdit1
             // 
@@ -126,6 +113,7 @@
             this.checkButton2.Size = new System.Drawing.Size(75, 53);
             this.checkButton2.TabIndex = 3;
             this.checkButton2.Text = "Sil";
+            this.checkButton2.CheckedChanged += new System.EventHandler(this.checkButton2_CheckedChanged);
             // 
             // checkButton3
             // 
@@ -144,12 +132,34 @@
             this.checkButton4.Size = new System.Drawing.Size(75, 45);
             this.checkButton4.TabIndex = 4;
             this.checkButton4.Text = "Yenile";
+            this.checkButton4.CheckedChanged += new System.EventHandler(this.checkButton4_CheckedChanged);
+            // 
+            // categoriesTableAdapter
+            // 
+            this.categoriesTableAdapter.ClearBeforeFill = true;
+            // 
+            // gridControl1
+            // 
+            this.gridControl1.Location = new System.Drawing.Point(292, 60);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(1041, 493);
+            this.gridControl1.TabIndex = 5;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            this.gridControl1.Click += new System.EventHandler(this.gridControl1_Click_1);
+            // 
+            // gridView1
+            // 
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
             // 
             // SearchCategoryViewPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1386, 612);
+            this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.checkButton4);
             this.Controls.Add(this.checkButton3);
             this.Controls.Add(this.checkButton2);
@@ -158,24 +168,23 @@
             this.Controls.Add(this.textEdit3);
             this.Controls.Add(this.textEdit2);
             this.Controls.Add(this.textEdit1);
-            this.Controls.Add(this.gridControl1);
             this.Name = "SearchCategoryViewPage";
             this.Text = "SearchCategoryViewPage";
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            this.Load += new System.EventHandler(this.SearchCategoryViewPage_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.connectDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraEditors.TextEdit textEdit1;
         private DevExpress.XtraEditors.TextEdit textEdit2;
         private DevExpress.XtraEditors.TextEdit textEdit3;
@@ -184,6 +193,11 @@
         private DevExpress.XtraEditors.CheckButton checkButton2;
         private DevExpress.XtraEditors.CheckButton checkButton3;
         private DevExpress.XtraEditors.CheckButton checkButton4;
+        private ConnectDataSet connectDataSet;
+        private System.Windows.Forms.BindingSource categoriesBindingSource;
+        private ConnectDataSetTableAdapters.CategoriesTableAdapter categoriesTableAdapter;
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
 
 
 

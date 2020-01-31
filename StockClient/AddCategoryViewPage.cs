@@ -8,6 +8,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using DevExpress.XtraLayout.Customization;
+using Service.Lib;
+using Service.Lib.Mapper;
+using Service.Lib.Model;
 
 namespace StockClient
 {
@@ -30,6 +34,20 @@ namespace StockClient
         private void checkButton1_CheckedChanged(object sender, EventArgs e)
         {
             
+            CategoryService service = new CategoryService();
+
+            CategoryModel categoryModel = new CategoryModel
+            {
+                CategoryId = new Guid(),
+                CategoryCode = textEdit1.Text,
+                CategoryName = textEdit2.Text,
+                Description =  textEdit3.Text,
+                Picture = new byte[0]
+            };
+            
+            service.Add(categoryModel);
+           
+
         }
 
     }

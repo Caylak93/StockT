@@ -12,6 +12,8 @@ namespace Service.Lib.Model
         public Guid CategoryId { get; set; }
        [Display(Name = "Kategori Adı")]
         public string CategoryName { get; set; }
+        [Display(Name = "Kategori Kodu")]
+        public string CategoryCode { get; set; }
         [Display(Name = "Kategori Açıklama")]
         public string Description { get; set; }
         [Display(Name = "Fotoğraf")]

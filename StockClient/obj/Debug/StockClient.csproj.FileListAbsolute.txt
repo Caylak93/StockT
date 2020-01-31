@@ -47,3 +47,5 @@ C:\Users\onur.caylak\Desktop\Projeler\StockT\StockClient\obj\Debug\StockClient.P
 C:\Users\onur.caylak\Desktop\Projeler\StockT\StockClient\obj\Debug\StockClient.SearchCategoryViewPage.resources
 C:\Users\onur.caylak\Desktop\Projeler\StockT\StockClient\obj\Debug\StockClient.csproj.GenerateResource.Cache
 C:\Users\onur.caylak\Desktop\Projeler\StockT\StockClient\obj\Debug\StockClient.exe.licenses
+C:\Users\onur.caylak\Desktop\Projeler\StockT\StockClient\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\onur.caylak\Desktop\Projeler\StockT\StockClient\bin\Debug\EntityFramework.SqlServer.xml

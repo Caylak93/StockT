@@ -9,8 +9,6 @@ C:\Users\aarikan\Desktop\StockT\StockDb\bin\Debug\EntityFramework.xml
 C:\Users\aarikan\Desktop\StockT\StockDb\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\aarikan\Desktop\StockT\StockDb\obj\Debug\StockDb.exe
 C:\Users\aarikan\Desktop\StockT\StockDb\obj\Debug\StockDb.pdb
-C:\Users\onur.caylak\Desktop\Projeler\StockT\StockDb\obj\Debug\StockDb.Migrations.First.resources
-C:\Users\onur.caylak\Desktop\Projeler\StockT\StockDb\obj\Debug\StockDb.csproj.GenerateResource.Cache
 C:\Users\onur.caylak\Desktop\Projeler\StockT\StockDb\obj\Debug\StockDb.exe
 C:\Users\onur.caylak\Desktop\Projeler\StockT\StockDb\obj\Debug\StockDb.pdb
 C:\Users\onur.caylak\Desktop\Projeler\StockT\StockDb\bin\Debug\StockDb.exe.config
@@ -20,3 +18,6 @@ C:\Users\onur.caylak\Desktop\Projeler\StockT\StockDb\bin\Debug\EntityFramework.d
 C:\Users\onur.caylak\Desktop\Projeler\StockT\StockDb\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\onur.caylak\Desktop\Projeler\StockT\StockDb\bin\Debug\EntityFramework.xml
 C:\Users\onur.caylak\Desktop\Projeler\StockT\StockDb\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\onur.caylak\Desktop\Projeler\StockT\StockDb\obj\Debug\StockDb.csprojResolveAssemblyReference.cache
+C:\Users\onur.caylak\Desktop\Projeler\StockT\StockDb\obj\Debug\StockDb.Migrations.First.resources
+C:\Users\onur.caylak\Desktop\Projeler\StockT\StockDb\obj\Debug\StockDb.csproj.GenerateResource.Cache
