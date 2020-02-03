@@ -23,7 +23,6 @@ namespace Service.Lib
                 List<CategoryModel> categoryModels = category.Select(s => new CategoryModel()
                 {
                     CategoryId = s.CategoryId,
-                    CategoryCode = s.CategoryCode,
                     CategoryName = s.CategoryName,
                     Description = s.Description,
                     Picture = s.Picture
